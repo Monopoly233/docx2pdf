@@ -1,7 +1,7 @@
 # docx2pdf
 python script allows you to batch convert docx files into pdf
 
-##note 
+## note 
 
 This is a simple script, so you need to manually install missing packages or libraries yourself
 
