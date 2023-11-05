@@ -2,16 +2,16 @@ import os
 import glob
 from docx2pdf import convert
 
-# 获取当前目录下的所有docx文件
+# gain all docx in same directory
 docx_files = glob.glob("*.docx")
 
-# 打印检测到的所有docx文件
-print("检测到的所有docx文件：")
+# print all files in the same directory 
+print("sense all docx file：")
 for file in docx_files:
     print(file)
 
-# 将每个docx文件转换为pdf文件
+# change every file to pdf 
 for docx_file in docx_files:
     pdf_file = os.path.splitext(docx_file)[0] + ".pdf"
     convert(docx_file, pdf_file)
-    print(f"{docx_file} 转换为 {pdf_file} 成功！")
+    print(f"{docx_file} to {pdf_file} success！")
